@@ -1,0 +1,101 @@
+html, body {
+  margin: 0;
+  height: 100%;
+}
+
+line {
+  stroke: red;
+}
+
+path {
+  stroke: green;
+  fill: none;
+  stroke-width: 2px;
+}
+
+g.group0 path,
+g.group0 circle {
+  stroke: red;
+  fill: none;
+}
+
+g.hidden line,
+g.hidden path {
+  display: none;
+}
+
+g.tick line {
+  stroke: blue;
+}
+
+g.tick text {
+  font-size: 12px;
+  fill: purple;
+}
+path {
+    stroke: #ccc;
+    stroke-width: 2;
+    fill: none;
+}
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: grey;
+    stroke-width: 1;
+    shape-rendering: crispEdges;
+}
+#legendContainer{
+	position:absolute;
+	top:60px;
+	left:10px;
+	overflow: auto;
+	height:490px;
+	width:110px;
+}
+#legend{
+	width:90px;
+	height:200px;
+}
+.legend {
+    font-size: 12px;
+    font-weight: normal;
+    text-anchor: left;
+}
+.legendcheckbox{
+	cursor: pointer;
+}
+#showAll{
+	position:absolute;
+	top:600px;
+	left:880px;
+}
+#clearAll{
+	position:absolute;
+	top:600px;
+	left:950px;
+}
+input{
+	border-radius:5px;
+	padding:5px 10px;
+	background:#999;
+	border:0;
+	color:#fff;
+}
+#inds{
+	position:absolute;
+	top:10px;
+	left:10px;
+}
+div.tooltip {
+  position: absolute;
+  text-align: center;
+  width: 60px;
+  height: 28px;
+  padding: 2px;
+  font: 12px sans-serif;
+  background: lightsteelblue;
+  border: 0px;
+  border-radius: 8px;
+  pointer-events: none;
+}

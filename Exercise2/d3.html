@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Winter Olympics Medals</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="/css/style.css">
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="http://d3js.org/d3.v4.min.js" charset="utf-8"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore.js"></script>
+
+
+</head>
+<body>
+
+	<div class="panel-body">
+		<select id="inds">
+				<option value="" selected="selected">All</option>
+				<option value="M">Male</option>
+				<option value="W">Female</option>
+				<option value="X">Combined</option>
+		</select>
+	</div>
+<br>
+
+<div class="container">
+  <div class="panel-group">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" href="#collapse2">Group By</a>
+        </h4>
+      </div>
+      <div id="collapse2" class="panel-collapse collapse">
+        <div class="panel-body">
+    <label for="checkbox-1">Gender</label>
+    <input type="checkbox" name="Gender" id="groupby.gender" class="groupby">
+    <label for="checkbox-2">Medal</label>
+    <input type="checkbox" name="Medal" id="groupby.medal" class="groupby">
+    <label for="checkbox-3">Country</label>
+    <input type="checkbox" name="Country" id="groupby.country" class="groupby">
+    <label for="checkbox-4">Sport</label>
+    <input type="checkbox" name="Sport" id="groupby.sport" class="groupby">
+				</div>
+      </div>
+<script type="text/javascript" src="/js/prices.js"></script>
+
+</body>
+
+</html>
