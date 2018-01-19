@@ -1,0 +1,74 @@
+
+html, body {
+  margin: 50;
+  height: 100%;
+}
+
+path {
+  stroke: #ccc;
+  fill: none;
+  stroke-width: 2px;
+}
+.grid .line {
+  stroke: lightgrey;
+  stroke-opacity: 0.7;
+  shape-rendering: crispEdges;
+}
+
+.page_header{
+  margin-left: 120px;
+  color: slateblue;
+}
+g.hidden line,
+g.hidden path {
+  display: none;
+}
+
+/* modify this to change grid color */
+g.tick line {
+stroke: lightgrey;
+stroke-opacity: 0.7;
+shape-rendering: crispEdges;
+}
+
+g.tick text {
+  font-size: 12px;
+  fill: purple;
+}
+path {
+    stroke: #ccc;
+    stroke-width: 2;
+    fill: none;
+}
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: grey;
+    stroke-width: 1;
+    shape-rendering: crispEdges;
+}
+
+input{
+	border-radius:5px;
+	padding:5px 10px;
+	background:#999;
+	border:0;
+	color:#fff;
+}
+div.tooltip {
+  position: absolute;
+  text-align: left;
+  width: 70px;
+  height: 24px;
+  padding: 2px;
+  font: 10px sans-serif;
+  background: lightsteelblue;
+  border: 0px;
+  border-radius: 8px;
+  pointer-events: none;
+}
+.year.label {
+  font: 18px sans-serif;
+  fill: #ddd;
+}
