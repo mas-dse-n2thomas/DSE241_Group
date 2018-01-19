@@ -141,7 +141,7 @@ function updateGraph(data) {
    var having = $('#havingField').val();
    var group_by_clause = $('#groupby').val();
    if (typeof having != undefined & having.length > 0 ) {
-     having = " HAVING count(*) > " + having;
+     having = " HAVING count(*) >= " + having;
    }
 
    var gby = alasql("SELECT count(*) Counts, Year," + group_by_clause + " FROM ? GROUP BY Year," + group_by_clause + having + " ORDER BY Year", [data]);
